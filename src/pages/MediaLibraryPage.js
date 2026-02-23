@@ -1,3 +1,4 @@
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 import { useState, useEffect, useContext, useMemo } from 'react';
 // For 3D preview
 // You must install @google/model-viewer in your project for this to work
@@ -83,6 +84,7 @@ export default function MediaLibraryPage() {
   });
 
   const R2_BASE_URL = "https://pub-ffeecb964df6439a9a2f21e12f093896.r2.dev";
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 
   useEffect(() => {
@@ -278,7 +280,7 @@ export default function MediaLibraryPage() {
           controls
           preload="metadata"
         >
-          <source src="https://pub-ffeecb964df6439a9a2f21e12f093896.r2.dev/uploads/getstarted_videos/getstarted_videos.mp4" />
+          <source src="https://pub-ffeecb964df6439a9a2f21e12f093896.r2.dev" />
 
         </video>
       );
